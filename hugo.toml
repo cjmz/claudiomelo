@@ -1,0 +1,40 @@
+baseURL = 'https://example.org/'
+languageCode = 'pt-br'
+title = 'Meu Site Hugo'
+theme = 'PaperMod'
+
+[params]
+  # Tema PaperMod configurações básicas
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+[params.homeInfoParams]
+  Title = "Olá! 👋"
+  Content = "Bem-vindo ao meu blog"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/"
+
+[markup.highlight]
+noClasses = false
+codeFences = true
+guessSyntax = true
+lineNos = true
+style = "github"
