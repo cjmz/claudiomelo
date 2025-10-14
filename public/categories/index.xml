@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on Claudio Melo | Data Engineering</title>
+    <title>Categories on Claudio Melo | Software &amp; Data Engineering</title>
     <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on Claudio Melo | Data Engineering</description>
+    <description>Recent content in Categories on Claudio Melo | Software &amp; Data Engineering</description>
     <image>
-      <title>Claudio Melo | Data Engineering</title>
+      <title>Claudio Melo | Software &amp; Data Engineering</title>
       <url>http://localhost:1313/images/og-image.png</url>
       <link>http://localhost:1313/images/og-image.png</link>
     </image>

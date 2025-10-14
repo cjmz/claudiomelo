@@ -2,7 +2,7 @@
 
 ## Project Context
 
-This is a personal technical blog built with **Hugo** and the **PaperMod** theme, focused on **Data Engineering**. The goal is to share high-quality knowledge about data engineering technologies and practices.
+This is a personal technical blog built with **Hugo** and the **PaperMod** theme, focused on **Software Engineering** and **Data Engineering**. The goal is to share high-quality knowledge about building robust systems, data engineering practices, and the mental models that help solve complex problems.
 
 ## Philosophy and Principles
 
@@ -11,13 +11,14 @@ This is a personal technical blog built with **Hugo** and the **PaperMod** theme
 - **Content is King:** The main focus is quality, depth, and readability of technical content
 - **Performance:** Optimize for instant loading
 - **Maximum Readability:** Clear typography, high contrast, and well-formatted code blocks
-- **Bilingual:** Primary language is English, with Portuguese support for Brazilian audience
+- **English Only:** All content is written in English for maximum reach
 
 ### Strategic Goals
-1. Publish high-quality technical articles about Data Engineering
+1. Publish high-quality technical articles about Software and Data Engineering
 2. Demonstrate professional expertise through in-depth technical content
-3. Build personal brand for opportunities in Brazil and internationally
+3. Build personal brand for opportunities internationally
 4. Maintain an updated knowledge portfolio
+5. Share enduring principles that transcend specific technologies
 
 ## Development Guidelines
 
@@ -26,14 +27,14 @@ This is a personal technical blog built with **Hugo** and the **PaperMod** theme
 - **PaperMod Theme** (Git submodule)
 - **Markdown** for content
 - **TOML** for configuration
-- **Multilingual support** (English/Portuguese)
+- **English only** (no multilingual support)
 
 ### File Structure
 ```
 content/
-  posts/           # Blog articles (English by default)
-  about.md         # About page (English)
-  sobre.md         # About page (Portuguese)
+  posts/           # Blog articles (English)
+  about.md         # About page
+  search.md        # Search page
 layouts/           # Custom Hugo templates
 static/            # Images, custom CSS
 themes/PaperMod/   # Theme (don't modify directly)
@@ -52,24 +53,24 @@ hugo.toml          # Main configuration
 - Use heading hierarchy correctly (H1 for title, H2 for main sections)
 - Include complete front matter in all posts
 - Use code blocks with appropriate syntax highlighting
-- Inclua metadados SEO (description, tags, categories)
+- Include SEO metadata (description, tags, categories)
 
-#### Configuração
-- Mantenha `hugo.toml` organizado e comentado
-- Use seções claras para diferentes tipos de configuração
-- Documente configurações customizadas
+#### Configuration
+- Keep `hugo.toml` organized and commented
+- Use clear sections for different configuration types
+- Document custom configurations
 
-### Front Matter Padrão para Posts
+### Standard Front Matter for Posts
 
 ```yaml
 ---
-title: "Título Claro e Descritivo"
+title: "Clear and Descriptive Title"
 date: 2025-10-13T10:00:00-03:00
 draft: false
 tags: ["spark", "data-engineering", "python", "aws"]
-categories: ["tutorial", "conceitos", "arquitetura"]
+categories: ["tutorial", "concepts", "architecture"]
 author: "Claudio Melo"
-description: "Descrição concisa de 150-160 caracteres para SEO"
+description: "Concise description of 150-160 characters for SEO"
 ShowToc: true
 TocOpen: false
 ShowReadingTime: true
@@ -79,155 +80,158 @@ ShowWordCount: true
 ---
 ```
 
-## Temas e Categorias do Blog
+## Blog Topics and Categories
 
-### Tópicos Principais
-- **Apache Spark** (performance, otimização, arquitetura)
-- **Data Lakes** (design, governança, arquitetura)
-- **Data Warehouses** (modelagem dimensional, modern data stack)
-- **Pipelines de Dados** (ETL/ELT, orquestração, Airflow)
-- **Cloud Computing** (AWS, Azure, GCP - serviços de dados)
-- **Arquitetura de Dados** (data mesh, data fabric, lake house)
+### Main Topics
+- **Software Engineering** (design patterns, architecture, best practices)
+- **Distributed Systems** (scalability, reliability, performance)
+- **Apache Spark** (performance tuning, optimization, architecture)
+- **Data Lakes** (design, governance, architecture)
+- **Data Pipelines** (ETL/ELT, orchestration, Airflow)
+- **Cloud Computing** (AWS, Azure, GCP - data services)
+- **Data Architecture** (data mesh, lake house, modern data stack)
 - **Python** (pandas, PySpark, data manipulation)
-- **SQL** (otimização, boas práticas)
+- **SQL** (optimization, best practices)
 - **Streaming** (Kafka, Kinesis, real-time processing)
-- **Data Quality** (validação, monitoramento, observability)
+- **System Design** (trade-offs, scalability patterns, mental models)
 
-### Categorias de Posts
-- `tutorial` - Guias passo a passo práticos
-- `conceitos` - Explicações teóricas e fundamentos
-- `arquitetura` - Design patterns e decisões arquiteturais
-- `performance` - Otimizações e benchmarks
-- `boas-praticas` - Padrões e recomendações
-- `case-study` - Estudos de caso reais
-- `opiniao` - Análises e reflexões técnicas
+### Post Categories
+- `tutorial` - Step-by-step practical guides
+- `concepts` - Theoretical explanations and fundamentals
+- `architecture` - Design patterns and architectural decisions
+- `performance` - Optimizations and benchmarks
+- `best-practices` - Patterns and recommendations
+- `case-study` - Real-world case studies
+- `opinion` - Technical analyses and reflections
 
-## Diretrizes de Conteúdo
+## Content Guidelines
 
-### Estrutura de Artigos
-1. **Introdução** - Contexto e problema
-2. **Conceitos** - Fundamentos necessários
-3. **Solução/Explicação** - Conteúdo principal
-4. **Exemplos Práticos** - Código e demonstrações
-5. **Considerações** - Trade-offs, limitações, quando usar
-6. **Conclusão** - Resumo e próximos passos
-7. **Referências** - Links e recursos adicionais
+### Article Structure
+1. **Introduction** - Context and problem
+2. **Concepts** - Necessary fundamentals
+3. **Solution/Explanation** - Main content
+4. **Practical Examples** - Code and demonstrations
+5. **Considerations** - Trade-offs, limitations, when to use
+6. **Conclusion** - Summary and next steps
+7. **References** - Links and additional resources
 
-### Estilo de Escrita
-- Tom profissional mas acessível
-- Explique conceitos complexos de forma clara
-- Use analogias quando apropriado
-- Inclua exemplos de código funcionais
-- Documente trade-offs e decisões de design
-- Cite fontes e referências
-- Use português brasileiro correto
+### Writing Style
+- Professional but accessible tone
+- Explain complex concepts clearly
+- Use analogies when appropriate
+- Include functional code examples
+- Document trade-offs and design decisions
+- Cite sources and references
+- Focus on enduring principles over specific technologies
 
-### Código nos Artigos
-- Sempre inclua syntax highlighting
-- Use exemplos completos e executáveis quando possível
-- Comente código complexo
-- Mostre outputs esperados
-- Inclua links para repositórios quando relevante
+### Code in Articles
+- Always include syntax highlighting
+- Use complete, executable examples when possible
+- Comment complex code
+- Show expected outputs
+- Include repository links when relevant
 
 ```python
-# Exemplo de código bem formatado
+# Example of well-formatted code
 from pyspark.sql import SparkSession
 
-# Configuração do Spark
+# Spark configuration
 spark = SparkSession.builder \
-    .appName("ExemploClaro") \
+    .appName("ClearExample") \
     .config("spark.sql.adaptive.enabled", "true") \
     .getOrCreate()
 
-# Processamento de dados
+# Data processing
 df = spark.read.parquet("s3://bucket/data/")
-result = df.filter(df.status == "active").groupBy("categoria").count()
+result = df.filter(df.status == "active").groupBy("category").count()
 result.show()
 ```
 
-## Comandos Hugo Úteis
+## Useful Hugo Commands
 
-### Desenvolvimento
+### Development
 ```bash
-# Servidor local com drafts
+# Local server with drafts
 ~/bin/hugo server -D
 
-# Criar novo post
-~/bin/hugo new posts/titulo-do-post.md
+# Create new post
+~/bin/hugo new posts/post-title.md
 
-# Build para produção
+# Build for production
 ~/bin/hugo --minify
 ```
 
-### Git e Submódulos
+### Git and Submodules
 ```bash
-# Atualizar tema PaperMod
+# Update PaperMod theme
 git submodule update --remote --merge
 
-# Clonar com submódulos
+# Clone with submodules
 git clone --recurse-submodules <repo-url>
 ```
 
-## Checklist para Novos Posts
+## Checklist for New Posts
 
-Ao criar ou revisar posts, verifique:
+When creating or reviewing posts, verify:
 
-- [ ] Front matter completo e correto
-- [ ] Título claro e SEO-friendly
-- [ ] Description entre 150-160 caracteres
-- [ ] Tags e categorias apropriadas
-- [ ] Data correta no formato ISO
-- [ ] Draft: false quando pronto para publicar
-- [ ] Código com syntax highlighting
-- [ ] Imagens otimizadas (se houver)
-- [ ] Links funcionando
-- [ ] Ortografia e gramática revisadas
-- [ ] TOC (table of contents) habilitado se necessário
-- [ ] Metadata de leitura (ShowReadingTime, etc.)
+- [ ] Complete and correct front matter
+- [ ] Clear and SEO-friendly title
+- [ ] Description between 150-160 characters
+- [ ] Appropriate tags and categories
+- [ ] Correct date in ISO format
+- [ ] Draft: false when ready to publish
+- [ ] Code with syntax highlighting
+- [ ] Optimized images (if any)
+- [ ] Working links
+- [ ] Spelling and grammar reviewed
+- [ ] TOC (table of contents) enabled if necessary
+- [ ] Reading metadata (ShowReadingTime, etc.)
 
-## Otimizações e Performance
+## Optimizations and Performance
 
-### Imagens
-- Use formatos modernos (WebP quando possível)
-- Comprima imagens antes de adicionar
+### Images
+- Use modern formats (WebP when possible)
+- Compress images before adding
 - Use lazy loading
-- Dimensione adequadamente
+- Size appropriately
 
 ### Build
-- Habilite minificação em produção
-- Use cache de build quando possível
-- Otimize bundles CSS/JS
+- Enable minification in production
+- Use build cache when possible
+- Optimize CSS/JS bundles
 
 ### SEO
-- Inclua meta descriptions únicas
-- Use URLs amigáveis
+- Include unique meta descriptions
+- Use friendly URLs
 - Configure Open Graph tags
-- Adicione schema.org markup quando relevante
+- Add schema.org markup when relevant
 
-## Manutenção
+## Maintenance
 
-### Atualizações
-- Mantenha Hugo atualizado (mínimo v0.146.0)
-- Atualize tema PaperMod periodicamente
-- Revise posts antigos para manter relevância
+### Updates
+- Keep Hugo updated (minimum v0.151.0)
+- Update PaperMod theme periodically
+- Review old posts to maintain relevance
 
 ### Backup
-- Commit frequente no Git
-- Mantenha submódulos sincronizados
-- Documente mudanças significativas
+- Frequent Git commits
+- Keep submodules synchronized
+- Document significant changes
 
-## Sugestões de Assistência do Copilot
+## Copilot Assistance Suggestions
 
-Ao trabalhar neste projeto, o Copilot deve:
+When working on this project, Copilot should:
 
-1. **Sugerir código Hugo/GoTemplate** seguindo boas práticas
-2. **Gerar front matter** completo para novos posts
-3. **Create code examples** related to Data Engineering
+1. **Suggest Hugo/GoTemplate code** following best practices
+2. **Generate complete front matter** for new posts
+3. **Create code examples** related to Software and Data Engineering
 4. **Optimize Hugo and PaperMod** configurations
 5. **Suggest well-organized technical article** structures
 6. **Generate useful Hugo shortcodes**
-7. **Create well-documented** Python/Spark code snippets
+7. **Create well-documented** code snippets (Python, Spark, SQL, etc.)
 8. **Suggest SEO and performance improvements**
+9. **Focus on enduring principles** over specific technologies
+10. **Emphasize system design and trade-offs** in technical content
 
 ## References
 
@@ -237,7 +241,3 @@ Ao trabalhar neste projeto, o Copilot deve:
 ---
 
 **Note:** This file guides GitHub Copilot behavior to maintain consistency and quality in blog development.
-
----
-
-**Nota:** Este arquivo guia o comportamento do GitHub Copilot para manter consistência e qualidade no desenvolvimento do blog.

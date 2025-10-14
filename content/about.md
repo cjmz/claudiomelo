@@ -2,50 +2,46 @@
 title: "About"
 layout: "single"
 url: "/about/"
-summary: "About Claudio Melo and this technical blog"
+summary: "About Claudio Melo and this blog"
 ShowToc: false
 ShowReadingTime: false
 ---
 
 # About Me
 
-Hi! 👋 I'm **Claudio Melo**, a Data Engineer passionate about building robust, scalable, and high-performance data systems.
+I'm **Claudio Melo**, a software and data engineer passionate about building systems that work at scale.
 
-## Technical Expertise
+## What I Do
 
-I primarily work with:
+I focus on the intersection of software engineering and data systems:
 
-- **Apache Spark** - Optimization, performance tuning, and distributed job architecture
-- **Data Lakes & Warehouses** - Design, governance, and modern architectures (Lake House)
-- **Cloud Computing** - AWS, Azure, and GCP for data solutions
-- **Python & SQL** - Efficient pipeline development and transformations
-- **Streaming & Batch** - Kafka, Airflow, data orchestration
+- **Distributed Systems** - Building and optimizing large-scale data processing systems
+- **Apache Spark** - Performance tuning, architecture, and best practices
+- **Data Architecture** - Designing robust data platforms and pipelines
+- **Software Engineering** - Writing maintainable, performant code
+- **System Design** - Trade-offs, scalability, and reliability patterns
 
 ## Philosophy
 
-I believe that **good data engineers** don't just make code work, they:
+I believe that good engineering is about:
 
-- ✅ Deeply understand the trade-offs of their decisions
-- ✅ Write code that others can maintain
-- ✅ Document the "why", not just the "how"
-- ✅ Share knowledge with the community
+- ✅ Understanding trade-offs deeply before making decisions
+- ✅ Writing code that communicates intent clearly
+- ✅ Documenting the reasoning behind architectural choices
+- ✅ Learning continuously and sharing knowledge
+- ✅ Building systems that are simple, but not simplistic
 
 ## About This Blog
 
-This blog focuses on:
+This blog explores:
 
-- 📚 **Deep technical content** with practical examples
-- 🎯 **Clear explanations** of complex concepts
-- ⚖️ **Trade-offs and considerations** from the real world
-- 🚀 **Working code** you can use
+- 📚 **Fundamental principles** that transcend specific technologies
+- 🎯 **System design patterns** and architectural decisions
+- ⚖️ **Trade-offs** in building real-world systems
+- 🚀 **Practical implementations** with working code
+- 🧠 **Mental models** for solving complex problems
 
-### Categories
-
-- **Tutorial** - Step-by-step practical guides
-- **Concepts** - Fundamentals and theory
-- **Architecture** - Design patterns and decisions
-- **Performance** - Optimizations and benchmarks
-- **Best Practices** - Lessons learned
+I write about topics like distributed data processing, system performance, software architecture, and the principles that make systems reliable and maintainable.
 
 ## Contact
 
@@ -54,4 +50,4 @@ This blog focuses on:
 
 ---
 
-**Note:** This blog is independently maintained. All opinions are my own and do not represent my past or present employers.
+**Note:** All opinions expressed here are my own and do not represent those of my employers, past or present.

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Claudio Melo | Data Engineering</title>
+    <title>Claudio Melo | Software &amp; Data Engineering</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Claudio Melo | Data Engineering</description>
+    <description>Recent content on Claudio Melo | Software &amp; Data Engineering</description>
     <image>
-      <title>Claudio Melo | Data Engineering</title>
+      <title>Claudio Melo | Software &amp; Data Engineering</title>
       <url>http://localhost:1313/images/og-image.png</url>
       <link>http://localhost:1313/images/og-image.png</link>
     </image>
@@ -26,14 +26,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>About Claudio Melo and this technical blog</description>
-    </item>
-    <item>
-      <title>Sobre</title>
-      <link>http://localhost:1313/pt/sobre/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pt/sobre/</guid>
-      <description>Sobre Claudio Melo e este blog técnico</description>
+      <description>About Claudio Melo and this blog</description>
     </item>
   </channel>
 </rss>
