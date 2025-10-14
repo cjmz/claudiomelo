@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on Meu Site Hugo</title>
+    <title>Categories on Claudio Melo | Data Engineering</title>
     <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on Meu Site Hugo</description>
+    <description>Recent content in Categories on Claudio Melo | Data Engineering</description>
+    <image>
+      <title>Claudio Melo | Data Engineering</title>
+      <url>http://localhost:1313/images/og-image.png</url>
+      <link>http://localhost:1313/images/og-image.png</link>
+    </image>
     <generator>Hugo -- 0.151.0</generator>
-    <language>pt-br</language>
+    <language>en</language>
+    <copyright>2025 Claudio Melo</copyright>
     <lastBuildDate>Mon, 13 Oct 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>

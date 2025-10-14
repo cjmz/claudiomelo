@@ -1,0 +1,73 @@
+{{- $type := .Get "type" | default "info" -}}
+{{- $icon := "" -}}
+{{- $class := "" -}}
+
+{{- if eq $type "info" -}}
+    {{- $icon = "ℹ️" -}}
+    {{- $class = "alert-info" -}}
+{{- else if eq $type "warning" -}}
+    {{- $icon = "⚠️" -}}
+    {{- $class = "alert-warning" -}}
+{{- else if eq $type "tip" -}}
+    {{- $icon = "💡" -}}
+    {{- $class = "alert-tip" -}}
+{{- else if eq $type "danger" -}}
+    {{- $icon = "🚨" -}}
+    {{- $class = "alert-danger" -}}
+{{- else if eq $type "spark" -}}
+    {{- $icon = "🔥" -}}
+    {{- $class = "alert-spark" -}}
+{{- end -}}
+
+<div class="custom-alert {{ $class }}">
+    <span class="alert-icon">{{ $icon }}</span>
+    <div class="alert-content">
+        {{ .Inner | markdownify }}
+    </div>
+</div>
+
+<style>
+.custom-alert {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border-left: 4px solid;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.alert-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.alert-content {
+    flex: 1;
+}
+
+.alert-info {
+    background: rgba(0, 217, 255, 0.1);
+    border-color: #00d9ff;
+}
+
+.alert-warning {
+    background: rgba(255, 167, 38, 0.1);
+    border-color: #ffa726;
+}
+
+.alert-tip {
+    background: rgba(0, 200, 83, 0.1);
+    border-color: #00c853;
+}
+
+.alert-danger {
+    background: rgba(244, 67, 54, 0.1);
+    border-color: #f44336;
+}
+
+.alert-spark {
+    background: rgba(226, 90, 28, 0.1);
+    border-color: #e25a1c;
+}
+</style>

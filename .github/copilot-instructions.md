@@ -1,53 +1,57 @@
-# GitHub Copilot Instructions - Blog Técnico Claudio Melo
+# GitHub Copilot Instructions - Claudio Melo Technical Blog
 
-## Contexto do Projeto
+## Project Context
 
-Este é um blog técnico pessoal construído com **Hugo** e o tema **PaperMod**, focado em **Engenharia de Dados**. O objetivo é compartilhar conhecimento de alta qualidade sobre tecnologias e práticas de engenharia de dados.
+This is a personal technical blog built with **Hugo** and the **PaperMod** theme, focused on **Data Engineering**. The goal is to share high-quality knowledge about data engineering technologies and practices.
 
-## Filosofia e Princípios
+## Philosophy and Principles
 
-### Design e Estrutura
-- **Inspiração:** Martin Fowler, Elton Minetto e outros blogs técnicos minimalistas
-- **Minimalismo Funcional:** Priorize código limpo, rápido e sem distrações
-- **Conteúdo é Rei:** O foco principal é a qualidade, profundidade e legibilidade do conteúdo técnico
-- **Performance:** Otimize para carregamento instantâneo
-- **Legibilidade Máxima:** Tipografia clara, alto contraste e blocos de código bem formatados
+### Design and Structure
+- **Functional Minimalism:** Prioritize clean, fast code without distractions
+- **Content is King:** The main focus is quality, depth, and readability of technical content
+- **Performance:** Optimize for instant loading
+- **Maximum Readability:** Clear typography, high contrast, and well-formatted code blocks
+- **Bilingual:** Primary language is English, with Portuguese support for Brazilian audience
 
-### Objetivos Estratégicos
-1. Publicar artigos técnicos de alta qualidade sobre Engenharia de Dados
-2. Demonstrar expertise profissional através de conteúdo técnico aprofundado
-3. Construir marca pessoal para oportunidades no Brasil e exterior
-4. Manter um portfólio de conhecimento atualizado
+### Strategic Goals
+1. Publish high-quality technical articles about Data Engineering
+2. Demonstrate professional expertise through in-depth technical content
+3. Build personal brand for opportunities in Brazil and internationally
+4. Maintain an updated knowledge portfolio
 
-## Diretrizes de Desenvolvimento
+## Development Guidelines
 
-### Tecnologias Principais
+### Main Technologies
 - **Hugo v0.151.0+** (static site generator)
-- **Tema PaperMod** (submódulo Git)
-- **Markdown** para conteúdo
-- **TOML** para configuração
+- **PaperMod Theme** (Git submodule)
+- **Markdown** for content
+- **TOML** for configuration
+- **Multilingual support** (English/Portuguese)
 
-### Estrutura de Arquivos
+### File Structure
 ```
-content/posts/       # Artigos do blog
-layouts/             # Templates personalizados do Hugo
-static/              # Imagens, CSS customizado
-themes/PaperMod/     # Tema (não modificar diretamente)
-hugo.toml            # Configuração principal
+content/
+  posts/           # Blog articles (English by default)
+  about.md         # About page (English)
+  sobre.md         # About page (Portuguese)
+layouts/           # Custom Hugo templates
+static/            # Images, custom CSS
+themes/PaperMod/   # Theme (don't modify directly)
+hugo.toml          # Main configuration
 ```
 
-### Padrões de Código
+### Code Standards
 
 #### Hugo/Templates
-- Use shortcodes do Hugo quando apropriado
-- Mantenha templates limpos e bem documentados
-- Evite lógica complexa em templates
-- Prefira partials reutilizáveis
+- Use Hugo shortcodes when appropriate
+- Keep templates clean and well-documented
+- Avoid complex logic in templates
+- Prefer reusable partials
 
-#### Markdown/Conteúdo
-- Use heading hierarchy corretamente (H1 para título, H2 para seções principais)
-- Inclua front matter completo em todos os posts
-- Use code blocks com syntax highlighting apropriado
+#### Markdown/Content
+- Use heading hierarchy correctly (H1 for title, H2 for main sections)
+- Include complete front matter in all posts
+- Use code blocks with appropriate syntax highlighting
 - Inclua metadados SEO (description, tags, categories)
 
 #### Configuração
@@ -218,19 +222,21 @@ Ao trabalhar neste projeto, o Copilot deve:
 
 1. **Sugerir código Hugo/GoTemplate** seguindo boas práticas
 2. **Gerar front matter** completo para novos posts
-3. **Criar exemplos de código** relacionados a Engenharia de Dados
-4. **Otimizar configurações** do Hugo e PaperMod
-5. **Sugerir estruturas de artigos** técnicos bem organizados
-6. **Gerar shortcodes** úteis para o Hugo
-7. **Criar snippets** de código Python/Spark bem documentados
-8. **Sugerir melhorias de SEO** e performance
+3. **Create code examples** related to Data Engineering
+4. **Optimize Hugo and PaperMod** configurations
+5. **Suggest well-organized technical article** structures
+6. **Generate useful Hugo shortcodes**
+7. **Create well-documented** Python/Spark code snippets
+8. **Suggest SEO and performance improvements**
 
-## Referências
+## References
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
 - [PaperMod Wiki](https://github.com/adityatelange/hugo-PaperMod/wiki)
-- [Martin Fowler's Blog](https://martinfowler.com/)
-- [Elton Minetto's Blog](https://eltonminetto.dev/)
+
+---
+
+**Note:** This file guides GitHub Copilot behavior to maintain consistency and quality in blog development.
 
 ---
 

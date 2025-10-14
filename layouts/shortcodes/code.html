@@ -1,0 +1,47 @@
+{{- $lang := .Get "lang" | default "bash" -}}
+{{- $title := .Get "title" | default "" -}}
+
+<div class="code-snippet">
+    {{- if $title -}}
+    <div class="code-title">
+        <span class="code-icon">💻</span>
+        <span>{{ $title }}</span>
+    </div>
+    {{- end -}}
+    <div class="code-wrapper">
+        {{ highlight (.Inner) $lang "linenos=table" }}
+    </div>
+</div>
+
+<style>
+.code-snippet {
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+.code-title {
+    background: linear-gradient(135deg, #00d9ff, #00b8d4);
+    color: #000;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.code-icon {
+    font-size: 1rem;
+}
+
+.code-wrapper {
+    background: #1e1e1e;
+}
+
+.code-wrapper pre {
+    margin: 0 !important;
+    border: none !important;
+}
+</style>

@@ -1,0 +1,225 @@
+/* ============================================
+   Custom Styles - Claudio Melo Data Engineering Blog
+   Inspirado em: Martin Fowler, Elton Minetto
+   ============================================ */
+
+/* === Variáveis de Cores - Tema Data Engineering === */
+:root {
+    --accent-color: #00d9ff; /* Cyan vibrante - representa dados/tecnologia */
+    --accent-hover: #00b8d4;
+    --code-bg: #1e1e1e;
+    --spark-orange: #e25a1c; /* Cor do Apache Spark */
+    --data-green: #00c853;
+    --warning-amber: #ffa726;
+}
+
+/* === Tipografia Aprimorada === */
+.post-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.post-content h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* === Links com estilo característico === */
+.post-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.post-content a:hover {
+    color: var(--accent-hover);
+    border-bottom-color: var(--accent-hover);
+}
+
+/* === Blocos de Código Destacados === */
+.post-content pre {
+    border-left: 4px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-content code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 0.9em;
+}
+
+/* Inline code */
+.post-content :not(pre) > code {
+    background: var(--code-bg);
+    color: var(--accent-color);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* === Citações/Blockquotes Estilizados === */
+.post-content blockquote {
+    border-left: 4px solid var(--spark-orange);
+    background: rgba(226, 90, 28, 0.05);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+/* === Tags Customizadas === */
+.post-tags a {
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    color: #000;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.post-tags a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 217, 255, 0.3);
+}
+
+/* === Header Customizado === */
+.logo a {
+    font-weight: 800;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--accent-color), var(--data-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* === Botão "Ler Mais" Destacado === */
+.post-entry .entry-footer a {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
+}
+
+/* === Reading Time Badge === */
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.post-meta .reading-time::before {
+    content: "📖 ";
+}
+
+/* === Table of Contents Melhorado === */
+.toc {
+    background: rgba(0, 217, 255, 0.05);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.toc details summary {
+    font-weight: 700;
+    color: var(--accent-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* === Destaque para Tech Keywords === */
+.post-content strong {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* === Footer com estilo minimalista === */
+.footer {
+    border-top: 2px solid var(--accent-color);
+}
+
+/* === Lista de posts na home === */
+.post-entry {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.post-entry:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 20px rgba(0, 217, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* === Badges para categorias específicas === */
+.post-entry[data-category*="spark"] {
+    border-left: 4px solid var(--spark-orange);
+}
+
+.post-entry[data-category*="tutorial"] {
+    border-left: 4px solid var(--data-green);
+}
+
+.post-entry[data-category*="performance"] {
+    border-left: 4px solid var(--warning-amber);
+}
+
+/* === Scrollbar Personalizada (Webkit) === */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-hover);
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+    .post-content {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .logo a {
+        font-size: 1.25rem;
+    }
+}
+
+/* === Copy Code Button Enhanced === */
+.highlight-copy-btn {
+    background: var(--accent-color) !important;
+    color: #000 !important;
+    font-weight: 600;
+}
+
+/* === Series Badge (se usar séries de artigos) === */
+.series-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--spark-orange), var(--warning-amber));
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}

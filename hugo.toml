@@ -1,13 +1,123 @@
-baseURL = 'https://example.org/'
-languageCode = 'pt-br'
-title = 'Meu Site Hugo'
+baseURL = 'https://claudiomelo.dev/'
+languageCode = 'en'
+defaultContentLanguage = 'en'
+title = 'Claudio Melo | Data Engineering'
 theme = 'PaperMod'
+copyright = "© 2025 Claudio Melo"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+
+# Paginação - configuração atualizada para Hugo v0.128+
+[pagination]
+  pagerSize = 10
+
+# Suporte multilíngue
+[languages.en]
+  languageName = "English"
+  weight = 1
+  title = "Claudio Melo | Data Engineering"
+  
+  [languages.en.params.homeInfoParams]
+    Title = "Data Engineering in Production"
+    Content = """
+    Hi! 👋 I'm **Claudio Melo**, a Data Engineer focused on **Apache Spark**, **Data Lakes**, and **Cloud Data Architecture**. 
+    
+    Here I share in-depth technical knowledge about:
+    
+    - 🔥 **Apache Spark** - Performance tuning, optimization, and architecture
+    - ☁️ **Cloud Data Engineering** - AWS, Azure, GCP
+    - 🏗️ **Data Architecture** - Lake House, Data Mesh, Modern Data Stack
+    - 🐍 **Python & SQL** - Best practices and optimizations
+    - 🚀 **Data Pipelines** - ETL/ELT, orchestration, streaming
+    
+    Technical articles with practical examples, trade-offs, and real-world lessons.
+    """
+
+  [[languages.en.menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  
+  [[languages.en.menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  
+  [[languages.en.menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+  [[languages.en.menu.main]]
+    identifier = "search"
+    name = "🔍 Search"
+    url = "/search/"
+    weight = 40
+
+[languages.pt]
+  languageName = "Português"
+  weight = 2
+  title = "Claudio Melo | Engenharia de Dados"
+  
+  [languages.pt.params.homeInfoParams]
+    Title = "Engenharia de Dados em Produção"
+    Content = """
+    Olá! 👋 Sou **Claudio Melo**, Engenheiro de Dados com foco em **Apache Spark**, **Data Lakes** e **Arquitetura de Dados em Nuvem**. 
+    
+    Aqui compartilho conhecimento técnico profundo sobre:
+    
+    - 🔥 **Apache Spark** - Performance, otimização e arquitetura
+    - ☁️ **Cloud Data Engineering** - AWS, Azure, GCP
+    - 🏗️ **Data Architecture** - Lake House, Data Mesh, Modern Data Stack
+    - 🐍 **Python & SQL** - Boas práticas e otimizações
+    - 🚀 **Pipelines de Dados** - ETL/ELT, orquestração, streaming
+    
+    Artigos técnicos com exemplos práticos, trade-offs e lições do mundo real.
+    """
+
+  [[languages.pt.menu.main]]
+    identifier = "posts"
+    name = "Artigos"
+    url = "/pt/posts/"
+    weight = 10
+  
+  [[languages.pt.menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/pt/tags/"
+    weight = 20
+  
+  [[languages.pt.menu.main]]
+    identifier = "sobre"
+    name = "Sobre"
+    url = "/pt/sobre/"
+    weight = 30
+
+  [[languages.pt.menu.main]]
+    identifier = "busca"
+    name = "🔍 Buscar"
+    url = "/pt/search/"
+    weight = 40
 
 [params]
-  # Tema PaperMod configurações básicas
-  defaultTheme = "auto"
+  env = "production"
+  title = "Claudio Melo"
+  description = "Data Engineering, from theory to code.py. A blog about building data systems that actually work."
+  keywords = ["data engineering", "apache spark", "data lakes", "python", "aws", "cloud computing", "data architecture"]
+  author = "Claudio Melo"
+  
+  # Tema visual - modo escuro por padrão (mais profissional para conteúdo técnico)
+  defaultTheme = "dark"
   disableThemeToggle = false
   
+  # Configurações de exibição
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -21,20 +131,53 @@ theme = 'PaperMod'
   comments = false
   hidemeta = false
   hideSummary = false
-  showtoc = false
+  showtoc = true
   tocopen = false
+  
+  # Analytics e performance
+  googleAnalytics = ""
+  
+  # SEO e metadados
+  images = ["/images/og-image.png"]
 
-[params.homeInfoParams]
-  Title = "Olá! 👋"
-  Content = "Bem-vindo ao meu blog"
+# Ícones sociais
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/cjmz"
 
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/"
+  name = "linkedin"
+  url = "https://linkedin.com/in/claudio-melo"
 
+[[params.socialIcons]]
+  name = "rss"
+  url = "/index.xml"
+
+# Botão de edição - link para GitHub
+[params.editPost]
+  URL = "https://github.com/cjmz/claudiomelo/tree/master/content"
+  Text = "📝 Suggest Improvements"
+  appendFilePath = true
+
+# Configuração de busca (FuseJS)
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Syntax highlighting - tema Dracula para modo escuro
 [markup.highlight]
-noClasses = false
-codeFences = true
-guessSyntax = true
-lineNos = true
-style = "github"
+  noClasses = false
+  codeFences = true
+  guessSyntax = true
+  lineNos = true
+  lineNumbersInTable = false
+  style = "dracula" # Mais adequado para tema dark
+
+# Configurações de markdown
+[markup.goldmark.renderer]
+  unsafe = true # Permite HTML em markdown quando necessário
+
+# Taxonomias
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
