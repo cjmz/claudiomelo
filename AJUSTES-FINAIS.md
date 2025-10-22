@@ -237,7 +237,7 @@ Traduzir os 2-3 posts mais acessados/importantes para português
 
 ### 5. Deploy
 - 🚀 GitHub Pages / Netlify / Vercel
-- 🔧 Domínio customizado (claudiomelo.dev)
+- 🔧 Domínio customizado (claudiomelo.com)
 - ✅ HTTPS habilitado
 
 ---

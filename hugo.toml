@@ -1,4 +1,4 @@
-baseURL = 'https://claudiomelo.dev/'
+baseURL = 'https://claudiomelo.com/'
 languageCode = 'en'
 title = 'Claudio Melo | Software & Data Engineering'
 theme = 'PaperMod'
@@ -44,7 +44,7 @@ pygmentsUseClasses = true
   env = "production"
   title = "Claudio Melo"
   description = "Software and Data Engineering. Building robust systems, deriving insights from data, and the mental models that solve complex problems."
-  keywords = ["software engineering", "data engineering", "apache spark", "distributed systems", "python", "system design", "data architecture"]
+  keywords = ["software engineering", "data engineering", "distributed systems", "python", "java", "system design", "data architecture", "software architecture"]
   author = "Claudio Melo"
   
   # Visual theme - dark mode by default
