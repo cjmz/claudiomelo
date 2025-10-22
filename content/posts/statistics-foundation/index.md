@@ -1,7 +1,8 @@
 ---
 title: "Statistics as the Foundation for Data Engineering: A Software Engineer's Transition"
-date: 2025-10-22T14:00:00-03:00
+date: 2025-01-22T14:00:00-03:00
 draft: false
+slug: "statistics-foundation-data-engineering"
 tags: ["data-engineering", "statistics", "career-transition", "software-engineering"]
 categories: ["concepts", "opinion", "best-practices"]
 author: "Claudio Melo"
@@ -14,23 +15,20 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ---
 
-## From Software Engineer to Data Engineering Enthusiast
 
 Having worked as a software engineer since 2012, I've gained experience across various domains including WordPress, Laravel, Ruby on Rails, backend, and frontend development. This year, I embarked on a new and exciting challenge as a backend software engineer at a prominent South American tech company, collaborating with a team of highly experienced professionals. The project, centered around a "feature store"—a concept new to me before joining—has presented novel challenges.
 
 For those unfamiliar with feature stores, let's first clarify what a feature is. A feature is a characteristic that describes an object, typically the subject of your study. These features are then utilized to train machine learning models or to make predictions based on them.
 
-It is an extremely important step in machine learning feature engineering, crucial for the successful operation of the entire process.
+Feature engineering in machine learning is a crucial step for the success of the entire process. For me, coming from the backend, the "feature store" is a fascinating component. It functions as a central data API for ML, needing to serve features with very low latency for real-time predictions (like a cache) and, at the same time, provide large volumes of historical data for model training (like a data warehouse). The real challenge lies in building and maintaining data pipelines (ETLs) that feed this store reliably and consistently. This is Data Engineering in practice.
 
-![Machine Learning Lifecycle - Feature Engineering](images/ml-lifecycle.png)
+![Machine Learning Lifecycle - Feature Engineering](/images/statistics-foundation/ml-lifecile.jpg)
 
 *Source: [Towards Data Science - Every Step of the Machine Learning Life Cycle Simply Explained](https://towardsdatascience.com/every-step-of-the-machine-learning-life-cycle-simply-explained-d1bca7c1772f/)*
 
 This exposure and the motivation to deepen my understanding of data engineering have inspired me to initiate a personal project focused on a data engineering career transition. To further this goal, I recently enrolled in a postgraduate program with a strong foundation in statistics. I'm thoroughly enjoying this course and am optimistic about the growing market for data engineering, a trend evident in Google's search data.
 
-
-
-![Google Trends - Data Engineering Interest](images/trends.png)
+![Google Trends - Data Engineering Interest](/images/statistics-foundation//trends.png)
 
 My pursuit of a data science analytics course, grounded in statistical principles, stems from a desire to comprehend the entire data science ecosystem. My goal is to specialize in data engineering, and understanding the broader field, including its statistical foundations, is crucial for this. In an era where large language models are increasingly capable of generating code, a solid knowledge base, particularly in statistics, becomes even more essential.
 

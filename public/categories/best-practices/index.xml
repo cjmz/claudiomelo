@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Claudio Melo | Software &amp; Data Engineering</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Claudio Melo | Software &amp; Data Engineering</description>
+    <title>Best-Practices on Claudio Melo | Software &amp; Data Engineering</title>
+    <link>http://localhost:1313/categories/best-practices/</link>
+    <description>Recent content in Best-Practices on Claudio Melo | Software &amp; Data Engineering</description>
     <image>
       <title>Claudio Melo | Software &amp; Data Engineering</title>
       <url>http://localhost:1313/images/og-image.png</url>
@@ -13,20 +13,13 @@
     <language>en</language>
     <copyright>2025 Claudio Melo</copyright>
     <lastBuildDate>Wed, 22 Jan 2025 14:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/best-practices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Statistics as the Foundation for Data Engineering: A Software Engineer&#39;s Transition</title>
       <link>http://localhost:1313/posts/statistics-foundation-data-engineering/</link>
       <pubDate>Wed, 22 Jan 2025 14:00:00 -0300</pubDate>
       <guid>http://localhost:1313/posts/statistics-foundation-data-engineering/</guid>
       <description>Why statistical thinking is crucial for transitioning into data engineering from software development</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>About Claudio Melo and this blog</description>
     </item>
   </channel>
 </rss>

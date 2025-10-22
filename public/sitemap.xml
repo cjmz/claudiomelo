@@ -2,32 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/blog/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <loc>http://localhost:1313/categories/best-practices/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/career-transition/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <loc>http://localhost:1313/categories/concepts/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/papermod/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <loc>http://localhost:1313/tags/data-engineering/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/opinion/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/primeiro-post/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <loc>http://localhost:1313/tags/software-engineering/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/statistics/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/statistics-foundation-data-engineering/</loc>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/tutorial/</loc>
-    <lastmod>2025-10-13T10:00:00-03:00</lastmod>
+    <lastmod>2025-01-22T14:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
