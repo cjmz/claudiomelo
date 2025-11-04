@@ -12,14 +12,14 @@
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <copyright>2025 Claudio Melo</copyright>
-    <lastBuildDate>Mon, 13 Oct 2025 10:00:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 04 Nov 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Primeiro Post</title>
-      <link>http://localhost:1313/posts/primeiro-post/</link>
-      <pubDate>Mon, 13 Oct 2025 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/posts/primeiro-post/</guid>
-      <description>Este é o meu primeiro post usando o tema PaperMod</description>
+      <title>JVM Deep Dive: Understanding Stack and Heap Memory</title>
+      <link>http://localhost:1313/posts/jvm-deep-dive-stack-heap/</link>
+      <pubDate>Tue, 04 Nov 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/posts/jvm-deep-dive-stack-heap/</guid>
+      <description>A comprehensive guide to understanding JVM memory management, focusing on stack and heap allocation patterns and performance implications</description>
     </item>
   </channel>
 </rss>

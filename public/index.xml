@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <copyright>2025 Claudio Melo</copyright>
-    <lastBuildDate>Wed, 22 Jan 2025 14:00:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 04 Nov 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JVM Deep Dive: Understanding Stack and Heap Memory</title>
+      <link>http://localhost:1313/posts/jvm-deep-dive-stack-heap/</link>
+      <pubDate>Tue, 04 Nov 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/posts/jvm-deep-dive-stack-heap/</guid>
+      <description>A comprehensive guide to understanding JVM memory management, focusing on stack and heap allocation patterns and performance implications</description>
+    </item>
     <item>
       <title>Statistics as the Foundation for Data Engineering: A Software Engineer&#39;s Transition</title>
       <link>http://localhost:1313/posts/statistics-foundation-data-engineering/</link>

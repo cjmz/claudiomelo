@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Software-Engineering on Claudio Melo | Software &amp; Data Engineering</title>
-    <link>http://localhost:1313/tags/software-engineering/</link>
-    <description>Recent content in Software-Engineering on Claudio Melo | Software &amp; Data Engineering</description>
+    <title>Performance on Claudio Melo | Software &amp; Data Engineering</title>
+    <link>http://localhost:1313/tags/performance/</link>
+    <description>Recent content in Performance on Claudio Melo | Software &amp; Data Engineering</description>
     <image>
       <title>Claudio Melo | Software &amp; Data Engineering</title>
       <url>http://localhost:1313/images/og-image.png</url>
@@ -13,20 +13,13 @@
     <language>en</language>
     <copyright>2025 Claudio Melo</copyright>
     <lastBuildDate>Tue, 04 Nov 2025 10:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JVM Deep Dive: Understanding Stack and Heap Memory</title>
       <link>http://localhost:1313/posts/jvm-deep-dive-stack-heap/</link>
       <pubDate>Tue, 04 Nov 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/posts/jvm-deep-dive-stack-heap/</guid>
       <description>A comprehensive guide to understanding JVM memory management, focusing on stack and heap allocation patterns and performance implications</description>
-    </item>
-    <item>
-      <title>Statistics as the Foundation for Data Engineering: A Software Engineer&#39;s Transition</title>
-      <link>http://localhost:1313/posts/statistics-foundation-data-engineering/</link>
-      <pubDate>Wed, 22 Jan 2025 14:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/posts/statistics-foundation-data-engineering/</guid>
-      <description>Why statistical thinking is crucial for transitioning into data engineering from software development</description>
     </item>
   </channel>
 </rss>

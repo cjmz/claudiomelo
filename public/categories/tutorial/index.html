@@ -47,6 +47,16 @@
         font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
     }
 </style>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NHFJSXSGGR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NHFJSXSGGR');
+</script>
 <meta property="og:url" content="http://localhost:1313/categories/tutorial/">
   <meta property="og:site_name" content="Claudio Melo | Software & Data Engineering">
   <meta property="og:title" content="Tutorial">
@@ -137,17 +147,15 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Primeiro Post
+    <h2 class="entry-hint-parent">JVM Deep Dive: Understanding Stack and Heap Memory
     </h2>
   </header>
   <div class="entry-content">
-    <p>Bem-vindo ao meu blog! Este é o meu primeiro post usando o tema PaperMod para Hugo.
-Características do PaperMod O tema PaperMod oferece:
-Design limpo e moderno Suporte a modo escuro/claro Responsivo Rápido carregamento SEO otimizado Código de exemplo 1def hello_world(): 2 print(&#34;Olá, mundo!&#34;) 3 return &#34;Hugo &#43; PaperMod é incrível!&#34; 4 5if __name__ == &#34;__main__&#34;: 6 message = hello_world() 7 print(message) Lista de tarefas Instalar Hugo Instalar tema PaperMod Criar primeiro post Personalizar o tema Adicionar mais conteúdo Espero que gostem do novo design!
-</p>
+    <p>Title should be defined As soon as I started working with Java I found some curious things. I’ve never evolved with a language that requires thorough care with memory as well as a language where it is needed to configure virtual machine resources and everything else. That is not criticism, maybe I’ve never been so deeply into a programming language to need to understand exactly how their core persists data into memory. I worked with Ruby, PHP and Go (for a small period of time), as well I have fun with Python sometimes and, at least from what I know, they do not have any complex memory management system.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-10-13 10:00:00 -0300 -03'>October 13, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>85 words</span>&nbsp;·&nbsp;<span>Claudio Melo</span></footer>
-  <a class="entry-link" aria-label="post link to Primeiro Post" href="http://localhost:1313/posts/primeiro-post/"></a>
+  <footer class="entry-footer"><span title='2025-11-04 10:00:00 -0300 -03'>November 4, 2025</span>&nbsp;·&nbsp;<span>10 min</span>&nbsp;·&nbsp;<span>2048 words</span>&nbsp;·&nbsp;<span>Claudio Melo</span></footer>
+  <a class="entry-link" aria-label="post link to JVM Deep Dive: Understanding Stack and Heap Memory" href="http://localhost:1313/posts/jvm-deep-dive-stack-heap/"></a>
 </article>
     </main>
     
@@ -164,17 +172,7 @@ Design limpo e moderno Suporte a modo escuro/claro Responsivo Rápido carregamen
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a><div class="custom-footer-content">
-    <p>
-        Built with 💙 and ☕ by <strong>Claudio Melo</strong> | 
-        Focused on <strong>Data Engineering</strong>
-    </p>
-    <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 0.5rem;">
-        Technical content about Apache Spark, Data Lakes, Cloud Computing and Data Architecture
-    </p>
-</div>
-
-<style>
+</a><style>
 .custom-footer-content {
     text-align: center;
     margin-top: 1rem;
