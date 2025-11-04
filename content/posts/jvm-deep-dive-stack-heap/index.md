@@ -15,10 +15,6 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ---
 
-
-
-# Title should be defined
-
 As soon as I started working with Java I found some curious things. I’ve never evolved with a language that requires thorough care with memory as well as a language where it is needed to configure virtual machine resources and everything else. That is not criticism, maybe I’ve never been so deeply into a programming language to need to understand exactly how their core persists data into memory. I worked with Ruby, PHP and Go (for a small period of time), as well I have fun with Python sometimes and, at least from what I know, they do not have any complex memory management system.
 
 The thing is that last month I was working on an application that will receive a huge amount of requests and sometimes I noticed that the application instance restarts without any clear problem so I went to learn more about how Java and JVM manage memory because the first thing I thought was a memory problem.
