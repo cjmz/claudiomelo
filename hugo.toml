@@ -83,6 +83,10 @@ pygmentsUseClasses = true
 
 # Social icons
 [[params.socialIcons]]
+  name = "email"
+  url = "mailto:claudiojm92@gmail.com"
+
+[[params.socialIcons]]
   name = "github"
   url = "https://github.com/cjmz"
 
