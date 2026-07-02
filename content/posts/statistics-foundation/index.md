@@ -28,7 +28,7 @@ Feature engineering in machine learning is a crucial step for the success of the
 
 This exposure and the motivation to deepen my understanding of data engineering have inspired me to initiate a personal project focused on a data engineering career transition. To further this goal, I recently enrolled in a postgraduate program with a strong foundation in statistics. I'm thoroughly enjoying this course and am optimistic about the growing market for data engineering, a trend evident in Google's search data.
 
-![Google Trends - Data Engineering Interest](/images/statistics-foundation//trends.png)
+![Google Trends - Data Engineering Interest](/images/statistics-foundation/trends.png)
 
 My pursuit of a data science analytics course, grounded in statistical principles, stems from a desire to comprehend the entire data science ecosystem. My goal is to specialize in data engineering, and understanding the broader field, including its statistical foundations, is crucial for this. In an era where large language models are increasingly capable of generating code, a solid knowledge base, particularly in statistics, becomes even more essential.
 

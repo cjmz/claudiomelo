@@ -1,0 +1,42 @@
+{
+  "project": "claudiomelo",
+  "brandName": "Claudio Melo",
+  "domain": "https://claudiomelo.com",
+  "language": "en-US",
+  "docsLanguage": "pt-BR",
+  "contentDir": "content/posts",
+  "contentFormat": "hugo-markdown-bundle",
+  "docsDir": ".docs",
+  "defaultAuthor": "Claudio Melo",
+  "git": {
+    "baseBranch": "master",
+    "branchPrefix": "feature/seo-"
+  },
+  "notify": {
+    "email": "claudio@stagency.tech",
+    "from": "routines@claudiomelo.com"
+  },
+  "runtime": {
+    "samplePost": "content/posts/jvm-deep-dive-stack-heap/index.md",
+    "buildCommand": "hugo --gc --minify",
+    "sitemap": "public/sitemap.xml"
+  },
+  "images": {
+    "strategy": "local",
+    "localDir": "static/images",
+    "model": "gemini-3-pro-image-preview",
+    "paletteDescription": "clean technical diagrams, dark slate background #1e293b, off-white text, single accent color, engineering-blog aesthetic (huyenchip.com / eugeneyan.com style)"
+  },
+  "gsc": {
+    "siteUrl": "sc-domain:claudiomelo.com",
+    "country": "USA",
+    "lookbackDays": 90,
+    "_secrets": "GSC_CLIENT_ID/GSC_CLIENT_SECRET/GSC_REFRESH_TOKEN vivem no environment (nunca aqui)."
+  },
+  "taxonomy": {
+    "useHubsTrails": false
+  },
+  "productSection": {
+    "enabled": false
+  }
+}

@@ -223,3 +223,67 @@
     font-weight: 600;
     margin-bottom: 1rem;
 }
+
+/* === Formulário de Contato (Netlify Forms) === */
+.contact-form {
+    max-width: 100%;
+    margin-top: 1.5rem;
+}
+
+.contact-form p {
+    margin: 0 0 1.25rem 0;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    background: var(--code-bg);
+    color: var(--primary);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.15);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-form button[type="submit"] {
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    color: #000;
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+}
+
+/* honeypot anti-spam — escondido de humanos */
+.contact-form .hidden-field {
+    display: none;
+}

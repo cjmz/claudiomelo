@@ -8,3 +8,48 @@
     color: var(--accent-color, #00d9ff);
 }
 </style>
+
+<!-- GA4 custom events: outbound clicks, code copy, search, contact form -->
+<script>
+(function () {
+  function track(name, params) {
+    if (typeof window.gtag === 'function') { window.gtag('event', name, params || {}); }
+  }
+  // Cliques: links externos e botões de copiar código
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('a[href], button');
+    if (!el) { return; }
+    if (el.tagName === 'A' && el.href) {
+      var url;
+      try { url = new URL(el.href, window.location.href); } catch (_) { return; }
+      if (url.hostname && url.hostname !== window.location.hostname) {
+        track('outbound_click', { link_url: el.href, link_domain: url.hostname });
+      }
+    } else if (el.tagName === 'BUTTON' &&
+               (el.classList.contains('copy-code') ||
+                el.classList.contains('highlight-copy-btn') ||
+                (el.closest && el.closest('pre')))) {
+      track('code_copy', { page_path: window.location.pathname });
+    }
+  }, true);
+  // Envio do formulário de contato
+  document.addEventListener('submit', function (e) {
+    if (e.target && e.target.getAttribute && e.target.getAttribute('name') === 'contact') {
+      track('generate_lead', { form_name: 'contact' });
+    }
+  });
+  // Uso da busca (PaperMod: #searchInput)
+  document.addEventListener('DOMContentLoaded', function () {
+    var si = document.getElementById('searchInput');
+    if (!si) { return; }
+    var t;
+    si.addEventListener('input', function () {
+      clearTimeout(t);
+      t = setTimeout(function () {
+        var v = si.value.trim();
+        if (v.length > 2) { track('search', { search_term: v }); }
+      }, 900);
+    });
+  });
+})();
+</script>

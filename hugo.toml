@@ -35,6 +35,12 @@ pygmentsUseClasses = true
     weight = 30
 
   [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 35
+
+  [[menu.main]]
     identifier = "search"
     name = "🔍 Search"
     url = "/search/"
