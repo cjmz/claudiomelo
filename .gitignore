@@ -1,0 +1,16 @@
+# Hugo build output (regenerado pela Netlify)
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Hugo cache
+/.hugo_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editores
+.idea/
+.vscode/
+*.swp
