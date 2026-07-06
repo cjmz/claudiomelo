@@ -24,7 +24,7 @@
   "images": {
     "strategy": "local",
     "localDir": "static/images",
-    "model": "gemini-3-pro-image-preview",
+    "model": "gemini-3.1-flash-image",
     "paletteDescription": "clean technical diagrams, dark slate background #1e293b, off-white text, single accent color, engineering-blog aesthetic (huyenchip.com / eugeneyan.com style)"
   },
   "gsc": {
